@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <title>Document</title>
 </head>
 <body>
-    <h1>Siddarooda swamiji ki jai</h1>
+    <div class="main w-full bg-black min-h-screen bg-zinc-900">
+        <div class="form p-10 text-white">
+            <form action="">
+                <input type="text" class="block w-full px-5 py-3 bg-zinc-600 rounded"  placeholder="enter the title">
+                <textarea name="" id="" class="block w-full px-5 py-3 mt-2 bg-zinc-600 rounded resize-none" placeholder="Enter the message"></textarea>
+                <input type="submit" class="mt-2 bg-blue-600 rounded-md px-3 py-2" value="Create Tast">
+
+            </form>
+        </div>
+        <div class="tasks p-10 flex gap-4 flex-wrap">
+            <div class="task w-72 px-3 py-4 bg-zinc-800 rounded-md text-white">
+                <h1 class="text-3xl tracking-tighter">title of message</h1>
+                <a class="text-blue-400" href="">click here</a>
+            </div>
+            <div class="task w-72 px-3 py-4 bg-zinc-800 rounded-md text-white">
+                <h1 class="text-3xl tracking-tighter">title of message</h1>
+                <a class="text-blue-400" href="">click here</a>
+            </div>
+            <div class="task w-72 px-3 py-4 bg-zinc-800 rounded-md text-white">
+                <h1 class="text-3xl tracking-tighter">title of message</h1>
+                <a class="text-blue-400 inline-block mt-3" href="">click here</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
